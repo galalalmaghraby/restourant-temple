@@ -1,0 +1,257 @@
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: fit-content;
+  }
+  
+::-webkit-scrollbar-track {
+    background-color: #23272C;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#C7791B ;
+  }
+/* navbar */
+nav.navbar{
+    height: 90px;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: #C7791B !important;
+}
+nav.navbar img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+nav.navbar ul li{
+    font-size: 24px;
+}
+nav.navbar ul li a{
+    color: black !important;
+
+}
+/* end navbar */
+/* banner -- section one */
+section.banner{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/background-1.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+section.banner h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+}
+/* end banner -- section one */
+/* start Menu -- section Two */
+section.menu{
+    min-height: 100vh;
+    background-image: url('assets/background-2.jpg');
+    background-size: 100% 100%;
+    padding: 60px 30px;
+}
+section.menu .title,.title{
+    text-align: center;
+    margin: 20px 0px;
+    color: #C7791B;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+section.menu div.d-flex{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section.menu div.d-flex div.menu-food{
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    transition: .1s all ease-in;   
+}
+section.menu div.d-flex div.menu-food img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+section.menu div.d-flex div.menu-food div.icons{
+    width: 100%;
+    height: 50px;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background-color: #C7791B;
+    position: absolute;
+    transition: .5s all ease-in;   
+    bottom: -100px;
+}
+section.menu div.d-flex div.menu-food:hover div.icons{
+    bottom: 0;
+}
+section.menu div.d-flex div.menu-food div.icons i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+/* end Menu -- section Two */
+/* start About -- section Three */
+section.about{
+    min-height: 100vh;
+    background-image: url('assets/background-3.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+}
+section.about div{
+    max-width: 600px;
+    margin: 50px 60px 0px;
+    padding-left: 30px;
+}
+section.about div h1{
+    color: #C7791B;
+    font-size: 50px;
+    border-bottom: 5px solid #C7791B;
+    width: fit-content;
+}
+section.about div p{
+    color: white;
+    margin: 20px 0px;
+}
+/* end About -- section Three */
+/* start Services -- section Four */
+section.services{
+    padding: 20px;
+    min-height: 500px;
+    background-image: url('assets/background-4.jpg');
+    background-size: 100% 100%;
+}
+section.services div.d-flex {
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section.services div.d-flex div {
+    width: 300px;
+    margin: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.services div.d-flex .title{
+    font-size: 30px !important;
+    font-weight: 400;
+}
+section.services div.d-flex img{
+    height: 100px;
+    width: 100px;
+}
+section.services div.d-flex div h1{
+    margin-top: 50px;
+    color: #C7791B;
+}
+/* end Services -- section Four */
+/* start Contact -- section Five */
+section.contact{
+    min-height: 400px;
+    background-image:  url('assets/background-5.jpg') ;
+    background-size: 100% 100%;
+}
+section.contact form{
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+section.contact form div.parent input{
+    height: 60px;
+    padding: 20px 0px 20px 20px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 8px 0px black;
+}
+section.contact form div.parent input.message{
+    height:140px;
+    
+}
+section.contact form div.parent input[type=submit]{
+    background-color: #23272C;
+    box-shadow: none;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 0;
+    color: #C7791B;
+    transition: .5s;
+}
+section.contact form div.parent input[type=submit]:hover{
+    color: #23272C;
+    background-color: #C7791B;
+
+}
+/* end Contact -- section Five */
+/* start Footer -- section Six */
+footer{
+    min-height: 60px;
+    background-color: #23272C;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+footer p{
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin: 0px;
+}
+footer p a{
+    text-decoration: none !important;
+    color: #C7791B !important;
+    margin-left: 0;
+}
+footer #whatsApp{
+    color: white;
+    font-size: 20px;
+    text-decoration: none !important;
+}
+footer #whatsApp i{
+    color: green;
+    font-size: 25px;
+}
+/* end Footer -- section Six */
+/* responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* nav */
+    nav.navbar ul{
+        background-color: black;
+        width: 100%;
+        padding: 20px;
+    }
+    nav.navbar ul li a{
+        color: white !important;
+    }
+    /* end nav */
+    /* about */
+    section.about{
+        background-size: cover;
+    }
+    /* end about */
+    /* services */
+    footer{
+       flex-wrap: wrap; 
+       padding: 20px;
+    }
+    /* end services */
+}
+
+
